@@ -17,7 +17,7 @@ dotnet add package AsyncReaderWriterLock
 ```
 
 - **Пакет:** [nuget.org/packages/AsyncReaderWriterLock](https://www.nuget.org/packages/AsyncReaderWriterLock)
-- **Версия:** 1.0 | **.NET 5+** | **.NET Standard 2.0**
+- **Версия:** 1.0.1 | **.NET 5+** | **.NET Standard 2.0**
 - **Разработчик:** [Lonewolf239](https://github.com/Lonewolf239)
 
 ---

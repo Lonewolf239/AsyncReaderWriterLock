@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace NeoIni.Models
+namespace AsyncLocks
 {
     /// <summary>
     /// Asynchronous reader‑writer lock with support for sync and async acquire, cancellation, and fair queuing.
@@ -12,7 +12,7 @@ namespace NeoIni.Models
     /// <br/>
     /// <b>Target Frameworks: .NET 5+ and .NET Standard 2.0</b>
     /// <br/>
-    /// <b>Version: 1.0</b>
+    /// <b>Version: 1.0.1</b>
     /// <br/>
     /// <b>Design:</b> Multiple readers can hold the lock simultaneously. Writers are exclusive.
     /// Waiting readers and writers are queued in FIFO order; writers are granted only when no readers are active.
