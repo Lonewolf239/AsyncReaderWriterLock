@@ -41,7 +41,7 @@ dotnet add package AsyncReaderWriterLock
 ### Захват блокировки для чтения
 
 ```csharp
-using AsyncReaderWriterLock;
+using AsyncLocks;
 
 var rwLock = new AsyncReaderWriterLock();
 

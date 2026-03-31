@@ -31,7 +31,7 @@ dotnet add package AsyncReaderWriterLock
 ### Acquiring a read lock
 
 ```csharp
-using AsyncReaderWriterLock;
+using AsyncLocks;
 
 var rwLock = new AsyncReaderWriterLock();
 
