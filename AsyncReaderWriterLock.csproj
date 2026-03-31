@@ -27,6 +27,12 @@
 		<DefineConstants>NETSTANDARD2_0</DefineConstants>
 	</PropertyGroup>
 	<ItemGroup>
+		<Compile Remove="AsyncReaderWriterLock.Tests\**" />
+		<Content Remove="AsyncReaderWriterLock.Tests\**" />
+		<None Remove="AsyncReaderWriterLock.Tests\**" />
+		<EmbeddedResource Remove="AsyncReaderWriterLock.Tests\**" />
+	</ItemGroup>
+	<ItemGroup>
 		<!-- <None Include="icon.png" Pack="true" PackagePath="\" /> -->
 		<None Include="docs\README-NUGET.md" Pack="true" PackagePath="\" />
 		<None Include="LICENSE" Pack="true" PackagePath="\" />

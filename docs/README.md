@@ -4,6 +4,8 @@
 [![.NET Standard 2.0](https://img.shields.io/badge/.NET%20Standard-2.0-2D2D2D?style=for-the-badge&logo=dotnet&logoColor=FFFFFF)](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0)
 [![MIT License](https://img.shields.io/badge/License-MIT-2D2D2D?style=for-the-badge&logo=open-source-initiative&logoColor=FFFFFF)](https://github.com/Lonewolf239/AsyncReaderWriterLock/blob/main/LICENSE)
 
+[![xUnit Tests](https://img.shields.io/badge/xUnit-Tests-2D2D2D?style=for-the-badge&logo=xunit&logoColor=FFFFFF)](https://lonewolf239.github.io/AsyncReaderWriterLock/)
+
 ### Languages
 [![EN](https://img.shields.io/badge/README-EN-2D2D2D?style=for-the-badge&logo=github&logoColor=FFFFFF)](./README.md)
 [![RU](https://img.shields.io/badge/README-RU-2D2D2D?style=for-the-badge&logo=google-translate&logoColor=FFFFFF)](./README-RU.md)
