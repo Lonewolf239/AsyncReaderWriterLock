@@ -13,7 +13,7 @@ AsyncReaderWriterLock follows a simple support model:
 
 | Version | Status | Support |
 |---------|--------|---------|
-| 1.0.1 | **Current** | Security patches + bug fixes |
+| 1.0.2 | **Current** | Security patches + bug fixes |
 | Older | **Deprecated** | No patches — upgrade strongly recommended |
 
 ---
