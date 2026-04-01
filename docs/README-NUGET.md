@@ -7,7 +7,7 @@ dotnet add package AsyncReaderWriterLock
 ```
 
 - **Package:** [nuget.org/packages/AsyncReaderWriterLock](https://www.nuget.org/packages/AsyncReaderWriterLock)
-- **Version:** 1.0.1 | **.NET 5+** | **.NET Standard 2.0**
+- **Version:** 1.0.2 | **.NET 5+** | **.NET Standard 2.0**
 - **Developer:** [Lonewolf239](https://github.com/Lonewolf239)
 
 ---
@@ -106,13 +106,13 @@ The `Releaser` returned by `ReadLock()`/`WriteLock()` is a `struct` that release
 
 ## API Reference
 
-Full method reference — [API.md](https://github.com/Lonewolf239/AsyncReaderWriterLock/docs/API.md)
+Full method reference — [API.md](https://github.com/Lonewolf239/AsyncReaderWriterLock/blob/main/docs/API.md)
 
 ---
 
 ## Contributing
 
-We welcome contributions! Please see [CONTRIBUTING.md](https://github.com/Lonewolf239/AsyncReaderWriterLock/docs/CONTRIBUTING.md) for guidelines.
+We welcome contributions! Please see [CONTRIBUTING.md](https://github.com/Lonewolf239/AsyncReaderWriterLock/blob/main/docs/CONTRIBUTING.md) for guidelines.
 
 ---
 

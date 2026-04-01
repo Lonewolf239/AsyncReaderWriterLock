@@ -3,7 +3,7 @@
 		<TargetFrameworks>net5.0;net6.0;net7.0;net8.0;net9.0;net10.0;netstandard2.0</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<PackageId>AsyncReaderWriterLock</PackageId>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<Authors>Lonewolf239</Authors>
 		<Description>An efficient, cross-platform asynchronous reader‑writer lock with sync and async support, cancellation, and fair queuing. Implements the reader‑writer pattern for multiple readers and exclusive writers.</Description>
 		<PackageTags>async;lock;readerwriter;threading;concurrency;await;cancellation;threadsafe</PackageTags>

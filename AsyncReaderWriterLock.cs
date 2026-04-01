@@ -12,7 +12,7 @@ namespace AsyncLocks
     /// <br/>
     /// <b>Target Frameworks: .NET 5+ and .NET Standard 2.0</b>
     /// <br/>
-    /// <b>Version: 1.0.1</b>
+    /// <b>Version: 1.0.2</b>
     /// <br/>
     /// <b>Design:</b> Multiple readers can hold the lock simultaneously. Writers are exclusive.
     /// Waiting readers and writers are queued in FIFO order; writers are granted only when no readers are active.
