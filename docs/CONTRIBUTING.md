@@ -11,7 +11,7 @@ We welcome bug reports, feature requests, and pull requests. This guide covers t
 
 Open a [GitHub Issue](https://github.com/Lonewolf239/AsyncReaderWriterLock/issues) with:
 
-- **Library version** (current: `1.0.1`) and **.NET version**.
+- **Library version** (current: `1.0.2`) and **.NET version**.
 - **Minimal reproduction** — code snippet or repo that triggers the bug.
 - **Expected vs. actual behavior.**
 - **Stack trace** (if applicable).
