@@ -131,3 +131,11 @@ using var rwLock = new AsyncReaderWriterLock();
 ## Philosophy
 
 **Просто, надёжно, потокобезопасно.** `AsyncReaderWriterLock` предоставляет только тот примитив синхронизации, который вам нужен — ничего лишнего. API минимален, но мощен, а реализация тщательно протестирована для гарантии корректности при любых обстоятельствах.
+
+## See also
+- NeoIni - Полнофункциональная библиотека C# для работы с INI-файлами, обеспечивающая безопасную, потокобезопасную конфигурацию чтения/записи со встроенной проверкой целостности (контрольной суммой) и опциональным шифрованием AES.
+  - Github: https://github.com/Lonewolf239/NeoIni
+  - NuGet: https://www.nuget.org/packages/NeoIni
+- BeautifulConsole - Мощная библиотека .NET для создания красивых консольных приложений с поддержкой истинного цвета, кроссплатформенным буфером обмена, расширенной настройкой окон и чистым, простым API.
+  - GitHub: https://github.com/Lonewolf239/BeautifulConsole
+  - NuGet: https://www.nuget.org/packages/BeautifulConsole
