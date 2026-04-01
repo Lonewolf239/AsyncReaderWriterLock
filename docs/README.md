@@ -131,3 +131,12 @@ We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for gu
 ## Philosophy
 
 **Simple, reliable, thread‑safe.** `AsyncReaderWriterLock` provides just the synchronization primitive you need — nothing more, nothing less. The API is minimal but powerful, and the implementation is thoroughly tested to ensure correctness under all circumstances.
+
+## See also
+
+- NeoIni - A fully-featured C# library for working with INI files that provides secure, thread-safe read/write configuration with built-in integrity checking (checksum) and optional AES encryption.
+  - Github: https://github.com/Lonewolf239/NeoIni
+  - NuGet: https://www.nuget.org/packages/NeoIni
+- BeautifulConsole - A powerful .NET library for building beautiful console applications with true‑color support, cross‑platform clipboard, advanced window customization, and a clean, black‑box API.
+  - GitHub: https://github.com/Lonewolf239/BeautifulConsole
+  - NuGet: https://www.nuget.org/packages/BeautifulConsole
