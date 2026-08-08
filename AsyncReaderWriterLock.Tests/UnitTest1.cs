@@ -1,4 +1,5 @@
-﻿using AsyncLocks;
+﻿using System.Reflection;
+using AsyncLocks;
 
 namespace AsyncReaderWriterLockTests
 {
@@ -348,6 +349,29 @@ namespace AsyncReaderWriterLockTests
             var releaser = rwLock.ReadLock();
             releaser.Dispose();
             releaser.Dispose();
+        }
+
+        // Regression test for a TOCTOU race: AcquireAsync's fast path checks Disposed, but if the lock could not be
+        // acquired immediately and control fell through to AcquireAsyncSlow, that slow path used to re-lock the
+        // gate and enqueue/grant without ever re-checking Disposed. A concurrent Dispose() landing in that window
+        // could either hand out a lock post-dispose or leave the new waiter stuck forever (DrainReadyWaiters bails
+        // out once Disposed is set, so nothing would ever complete its task). The race window is too narrow to hit
+        // reliably through the public API, so this calls the private slow path directly via reflection after the
+        // lock is already disposed, which exercises exactly the code path that used to skip the disposed check.
+        [Fact]
+        public async Task AcquireAsyncSlow_AfterDispose_ThrowsObjectDisposedException()
+        {
+            var rwLock = new AsyncReaderWriterLock();
+            rwLock.Dispose();
+
+            var method = typeof(AsyncReaderWriterLock).GetMethod("AcquireAsyncSlow", BindingFlags.NonPublic | BindingFlags.Instance)!;
+            var task = (Task)method.Invoke(rwLock, new object[] { false, CancellationToken.None })!;
+
+            var completed = await Task.WhenAny(task, Task.Delay(TimeSpan.FromSeconds(5)));
+            Assert.Same(task, completed);
+
+            var ex = await Record.ExceptionAsync(() => task);
+            Assert.IsType<ObjectDisposedException>(ex);
         }
     }
 }

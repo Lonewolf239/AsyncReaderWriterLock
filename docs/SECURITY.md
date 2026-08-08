@@ -11,10 +11,10 @@ Report vulnerabilities responsibly so they can be fixed before public disclosure
 
 AsyncReaderWriterLock follows a simple support model:
 
-| Version | Status | Support |
-|---------|--------|---------|
-| 1.0.2 | **Current** | Security patches + bug fixes |
-| Older | **Deprecated** | No patches — upgrade strongly recommended |
+| Version | Status         | Support                                   |
+| ------- | -------------- | ----------------------------------------- |
+| 1.0.3   | **Current**    | Security patches + bug fixes              |
+| Older   | **Deprecated** | No patches — upgrade strongly recommended |
 
 ---
 
